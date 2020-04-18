@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <script src="/public/scripts/screens/game.js" defer></script>
+    <title>Уголки</title>
+</head>
+
+<body>
+    <header>
+        <h1>Уголки</h1>
+    </header>
+
+    <main class="waiting">
+        <h2>Подождите подключения следующего игрока</h2>
+    </main>
+
+    <main class="game" hidden>
+        <h2>Ход противника</h2>
+        <form name="player-roll">
+            <fieldset disabled>
+                <div id="board"></div>
+            </fieldset>
+        </form>
+    </main>
+
+    <main class="result" hidden>
+        <h2>Игра закончена</h2>
+        <p>Игра прервана</p>
+        <button type="button" class="restart">Перезапустить</button>
+    </main>
+
+    <script type="module" src="scripts/index.js"></script>
+</body>
+
+</html>

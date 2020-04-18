@@ -1,0 +1,122 @@
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;  
+}
+
+/* фон */
+body {  
+  background: -webkit-linear-gradient(left, #474752 20px, transparent 1%) center, -webkit-linear-gradient(#474752 20px, transparent 1%) center, #636363;
+  background: linear-gradient(90deg, #474752 20px, transparent 1%) center, linear-gradient(#474752 20px, transparent 1%) center, #636363;
+  background-size: 22px 22px;
+}
+
+/* заголовок "Уголки" */
+header {
+  padding: 10px 10px 70px;
+  letter-spacing: 0.5ex;
+  color: white;
+  text-align: center;
+  font-size: 80px; 
+  text-transform: uppercase;
+  text-shadow: -1px 1px 8px rgba(0, 0, 0, .08), -2px 2px 1px rgba(0, 0, 0, .075), -4px 4px 1px rgba(0, 0, 0, .07), -6px 6px 1px rgba(0, 0, 0, .065), -8px 8px 1px rgba(0, 0, 0, .06), -10px 10px 1px rgba(0, 0, 0, .055), -12px 12px 1px rgba(0, 0, 0, .05), -14px 14px 1px rgba(0, 0, 0, .045), -16px 16px 1px rgba(0, 0, 0, .04), -18px 18px 1px rgba(0, 0, 0, .035), -20px 20px 1px rgba(0, 0, 0, .03), -22px 22px 1px rgba(0, 0, 0, .025), -24px 24px 1px rgba(0, 0, 0, .02), -26px 26px 1px rgba(0, 0, 0, .015), -28px 28px 1px rgba(0, 0, 0, .01), -30px 30px 1px rgba(0, 0, 0, .005), -32px 32px 1px rgba(0, 0, 0, .0025), -34px 34px 1px rgba(0, 0, 0, .002), -36px 36px 1px rgba(0, 0, 0, .0015), -38px 38px 1px rgba(0, 0, 0, .001);
+}
+
+p {
+  color: white;
+}
+
+label {
+  padding-right: 5px;
+}
+
+/* доска */
+#board {
+  margin: 30px auto;
+  box-shadow: 6px 6px 60px #eae879;
+	display: flex;
+	flex-wrap: wrap;
+  width: 28vw;
+}
+
+.row {
+	display: flex;
+}
+
+.tile {
+  background-color: #343536;
+	height: 3.125vw;
+	min-width: 3.125vw;
+  border: 0.05vw solid #bdc149;
+}
+
+.chess {
+  height: 2.9vw;
+	width: 2.9vw;
+}
+
+.form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align: center;
+}
+
+/* ввод */
+.btnt {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer; 
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: inherit;
+  line-height: 36px;
+}
+
+/* кнопки */
+.btn {
+  background-color: white;
+  border: 1px solid #039be5;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  color: #black;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  border-radius: 20px;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  word-wrap: break-word;
+  font-family: inherit;
+}
+
+.btn:hover {
+    color: #fefefe;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+
+.fade {
+    transition: background-color 1000ms;
+}
+ 
+.fade:hover {
+    background-color: #039be5;
+}
